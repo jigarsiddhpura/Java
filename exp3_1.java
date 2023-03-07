@@ -23,7 +23,7 @@ public class exp3_1{
                 }
             }
         }
-        System.out.println(Arrays.toString(nums));
+        // System.out.println(Arrays.toString(nums));
 
         for(int i=0;i<nums.length;i++){
                 for(int j=i;j<nums.length;j++){

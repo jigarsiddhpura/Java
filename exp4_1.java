@@ -16,7 +16,7 @@ public class exp4_1{
         ve.add(2,"jigar");
         System.out.println("Vector : " + ve);
         ve.removeElementAt(3);
-        v.remove("jigar")
+        v.remove("jigar");
         System.out.println("Vector : " + ve);     
         
     }

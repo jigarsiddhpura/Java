@@ -1,6 +1,6 @@
 class Movie extends Thread {
-
-  int v = 1, r;
+//  v = vacant , r = required
+  int v = 2, r;
 
   Movie(int x) {
     r = x;
@@ -21,15 +21,18 @@ class Movie extends Thread {
   }
 }
 
-class Main {
+class Movie1 {
 
   public static void main(String z[]) {
     Movie m = new Movie(1);
     Thread t1 = new Thread(m);
     Thread t2 = new Thread(m);
-    t1.setName("Ajay");
-    t2.setName("Vijay");
+    Thread t3 = new Thread(m);
+    t1.setName("Thread1");
+    t2.setName("Thread2");
+    t3.setName("Thread3");
     t1.start();
     t2.start();
+    t3.start();
   }
 }
